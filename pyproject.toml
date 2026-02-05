@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mani_skill_gs"
+version = "0.0.1"
+description = "ManiSkill-GS: Gaussian Splatting for manipulation simulation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "gsplat==1.4.0",
+    "mani-skill==3.0.0b21",
+    "gymnasium==0.29.1",
+    "nerfstudio==1.1.5",
+    "networkx==3.4.2",
+    "e3nn==0.5.9",
+    "urdfpy==0.0.22",
+    "einops==0.8.1"
+]
+
+[tool.uv]
+override-dependencies = [
+    "urdfpy==0.0.22",
+    "networkx==3.4.2",
+    # For compatibility with openpi
+    "protobuf==6.33.2",
+    "timm==0.9.10",
+    "pyopengl==3.1.10",
+]
+
+[tool.setuptools]
+packages = ["mani_skill_gs"]
+include-package-data = true
