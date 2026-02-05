@@ -10,16 +10,15 @@ For the full RL workflow (e.g. PPO with π₀.₅ on GSEnv), see [RL with Real2S
 
 ## Setup
 
-Use the Docker image from RLinf in [install-dependencies](https://rlinf.readthedocs.io/en/latest/rst_source/examples/pi0.html#install-dependencies).
+Use the Docker image or the install script from RLinf in [install-dependencies](https://rlinf.readthedocs.io/en/latest/rst_source/examples/pi0.html#install-dependencies).
 
 
-Requires CUDA (for GS rendering). Clone the repo and install in editable mode (ManiSkill, Gymnasium, Nerfstudio, gsplat, etc. are listed in `setup.py`):
+Requires CUDA (for GS rendering). Clone the repo and install in editable mode (ManiSkill, Gymnasium, Nerfstudio, gsplat, etc. are listed in `pyproject.toml`):
 
 ```bash
 git clone git@github.com:chenkang455/ManiSkill-GS.git
 cd ManiSkill-GS
-pip install urdfpy==0.0.22
-pip install -e .
+uv pip install -e . # Must use uv to ensure dependency overrides work
 ```
 
 ### Assets
