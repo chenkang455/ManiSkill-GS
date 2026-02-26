@@ -2,7 +2,7 @@
 
 A simulation platform combining **ManiSkill** robot simulation, **Gaussian Splatting** rendering, and **Real-to-Sim-to-Real** transfer learning for robotic manipulation tasks, built in [pi_RL: Online RL Fine-tuning for Flow-based Vision-Language-Action Models](https://arxiv.org/pdf/2510.25889).
 
-For the full RL workflow (e.g. PPO with π₀.₅ on GSEnv), see [RL with Real2Sim2Real GSEnv](https://rlinf.readthedocs.io/en/latest/rst_source/examples/gsenv.html).
+For the full RL workflow (e.g. PPO with π₀.₅ on GSEnv), see [RL with Real2Sim2Real GSEnv](https://rlinf.readthedocs.io/en/latest/rst_source/examples/embodied/gsenv.html).
 
 <p align="center">
   <img src="imgs/figure.png" width="65%">
